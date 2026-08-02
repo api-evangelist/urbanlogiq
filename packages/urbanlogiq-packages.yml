@@ -1,0 +1,59 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/urbanlogiq
+notes: >-
+  UrbanLogiq distributes its SDK and CLI as open source from GitHub (MIT-style
+  license, copyright CommunityLogiq Software, Inc.). The SDK is a single
+  multi-language repository (ulsdk v0.8.0) with C++, Go, Java, Python, Rust,
+  and TypeScript implementations. Nothing is published to the public package
+  registries — checked npm (ts package is private), PyPI (ulsdk/ulcli 404),
+  crates.io (ulsdk does not exist), and no Maven Central, NuGet, RubyGems,
+  Packagist, or pkg.go.dev-indexed releases were found on 2026-07-21. Install
+  is from source; the Go module path github.com/urbanlogiq/ulsdk is go-gettable.
+packages:
+- language: python
+  registry: github
+  name: ulsdk
+  url: https://github.com/urbanlogiq/ulsdk
+  install: pip install git+https://github.com/urbanlogiq/ulsdk.git
+  official: true
+  version: 0.8.0
+- language: rust
+  registry: github
+  name: ulsdk
+  url: https://github.com/urbanlogiq/ulsdk
+  install: 'cargo add --git https://github.com/urbanlogiq/ulsdk.git ulsdk'
+  official: true
+  version: 0.8.0
+- language: go
+  registry: github
+  name: github.com/urbanlogiq/ulsdk
+  url: https://github.com/urbanlogiq/ulsdk
+  install: go get github.com/urbanlogiq/ulsdk
+  official: true
+- language: typescript
+  registry: github
+  name: '@ul/sdk'
+  url: https://github.com/urbanlogiq/ulsdk/tree/main/ts
+  install: build from source (yarn, package is marked private)
+  official: true
+  version: 0.8.0
+- language: java
+  registry: github
+  name: ulsdk
+  url: https://github.com/urbanlogiq/ulsdk/tree/main/java
+  install: build from source
+  official: true
+- language: cpp
+  registry: github
+  name: ulsdk
+  url: https://github.com/urbanlogiq/ulsdk/tree/main/cpp
+  install: build from source (CMake)
+  official: true
+- language: python
+  registry: github
+  name: ulcli
+  url: https://github.com/urbanlogiq/ulcli
+  install: pip install git+https://github.com/urbanlogiq/ulcli.git
+  official: true
+  kind: cli

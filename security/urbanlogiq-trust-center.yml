@@ -1,0 +1,28 @@
+generated: '2026-07-21'
+method: searched
+url: https://urbanlogiq.com/trust-center
+certifications:
+- ISO/IEC 27001:2022
+- ISO/IEC 27701:2019
+- ISO/IEC 27017:2015
+- ISO/IEC 27018:2019
+compliance:
+- GDPR
+- CCPA
+- PIPEDA
+data_residency: >-
+  UrbanLogiq states the data for its Service is hosted entirely within the
+  legal jurisdiction of its users; the platform runs separate US
+  (home.urbanlogiq.us) and Canada (home.urbanlogiq.ca) environments.
+  International transfers require customer verification.
+evidence:
+- source: https://urbanlogiq.com/privacy
+  keywords: [ISO/IEC 27001:2022, ISO/IEC 27701:2019, ISO/IEC 27017:2015, ISO/IEC 27018:2019, GDPR, CCPA, PIPEDA, data residency]
+- source: https://urbanlogiq.com/llms.txt
+  keywords: [Trust Center, 'Security, privacy, and compliance posture']
+- source: https://urbanlogiq.com/
+  keywords: [ISO certifications, GDPR, CCPA, PIPEDA]
+notes: >-
+  The /trust-center page itself is client-side rendered (the static HTML is an
+  app shell); the certification and compliance detail above was verified on
+  the privacy page and homepage. SOC 2 is not mentioned anywhere on the site.

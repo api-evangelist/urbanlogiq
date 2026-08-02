@@ -1,0 +1,41 @@
+# UrbanLogiq
+
+> AI-powered data platform helping governments make better, faster decisions across transportation, planning, public safety, and economic development.
+
+UrbanLogiq builds a secure data platform and a Global Foundation Model for the public sector. Our tools unify siloed government data so agencies can monitor networks, target investment, and improve community outcomes.
+
+## Product
+
+- [Data Platform](/data-platform): Unified data platform for government — integration, analytics, and decision support.
+- [Global Foundation Model](/global-foundation-model): Cross-jurisdictional AI model trained on community behavior at scale.
+- [Ethica](/ethica): Government-grade generative AI insights engine.
+- [Trust Center](/trust-center): Security, privacy, and compliance posture.
+
+## Solutions
+
+- [Transportation](/solutions/transportation): Traffic safety, mobility analytics, and Vision Zero.
+- [Planning](/solutions/planning): Land use, zoning, and long-range planning tools.
+- [Public Safety](/solutions/public-safety): Fire risk, crime, and emergency response analytics.
+- [Economic Development](/solutions/economic-development): Investment targeting and main-street insights.
+
+## Resources
+
+- [About Us](/resources/about-us): Who we are and what we do.
+- [Team](/resources/team): Leadership and people.
+- [Careers](/resources/careers): Open roles at UrbanLogiq.
+- [Blog](/resources/blog): Articles on AI, data, and government.
+- [News](/resources/news): Press, awards, and media coverage.
+- [Webinars](/resources/webinars): Live and recorded sessions.
+- [Podcast](/resources/podcast): Conversations with public-sector leaders.
+- [Library](/resources/library): Case studies, white papers, and brochures.
+- [FAQs](/resources/faqs): Common questions about the platform.
+
+## Contact
+
+- [Book a Demo](/book-demo): Request a personalized walkthrough.
+
+## Optional
+
+- [Privacy Policy](/privacy)
+- [Terms and Conditions](/terms-and-conditions)
+- [Cookie Policy](/cookie-policy)

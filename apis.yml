@@ -1,25 +1,129 @@
 aid: urbanlogiq
 name: UrbanLogiq
-description: UrbanLogiq is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  UrbanLogiq (CommunityLogiq Software, Inc.) is a community intelligence
+  platform that helps government leaders make faster, data-driven decisions by
+  unifying siloed departmental data across transportation, planning, public
+  safety, and economic development. The platform spans data integration,
+  predictive modeling, cross-domain analytics, and governed generative AI
+  (Ethica), and is served by a signed-request platform API with an official
+  open source multi-language SDK (C++, Go, Java, Python, Rust, TypeScript) and
+  CLI. Customers include the City of Toronto, Chicago DOT, the State of
+  Hawaii, and Texas DOT; the service runs in separate US and Canada
+  environments for data residency and is ISO/IEC 27001, 27701, 27017, and
+  27018 certified.
 url: https://raw.githubusercontent.com/api-evangelist/urbanlogiq/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://storage.googleapis.com/gpt-engineer-file-uploads/iMsRxc6pmShB43YLqbITcQTBj7L2/social-images/social-1774310251571-colored_ul_logo.webp
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 14
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Government
+- GovTech
+- Data
+- Analytics
+- Transportation
+- Urban Planning
+- Public Safety
+- Economic Development
+- Artificial Intelligence
+apis:
+- name: UrbanLogiq Platform API
+  description: >-
+    The signed-request platform API behind the UrbanLogiq community
+    intelligence platform — data catalog objects, aggregate queries, and
+    streams served in Apache Arrow, Parquet, CSV, XLSX, JSON, text, and HTML;
+    drive file storage; a directory of users, groups, and principals; ACL
+    sharing and permissions; inbox notifications; API key management;
+    schematic evaluator jobs; and session bootstrap. Authenticated with
+    UL1-ED25519 signed requests via the official open source multi-language
+    ulsdk (v0.8.0).
+  humanURL: https://github.com/urbanlogiq/ulsdk
+  baseURL: https://home.urbanlogiq.us
+  tags:
+  - Data
+  - Government
+  - Analytics
+  properties:
+  - type: Documentation
+    url: https://github.com/urbanlogiq/ulsdk#readme
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/urbanlogiq-vulnerability-disclosure.yml
+- type: Security
+  url: https://urbanlogiq.com/.well-known/security.txt
+- type: DomainSecurity
+  url: security/urbanlogiq-domain-security.yml
 - type: Website
   url: https://urbanlogiq.com
+- type: Documentation
+  url: https://github.com/urbanlogiq/ulsdk#readme
+- type: GitHubOrganization
+  url: https://github.com/urbanlogiq
+- type: Blog
+  url: https://urbanlogiq.com/resources/blog
+- type: Support
+  url: https://urbanlogiq.com/resources/faqs
+- type: Careers
+  url: https://urbanlogiq.com/resources/careers
+- type: PrivacyPolicy
+  url: https://urbanlogiq.com/privacy
+- type: TermsOfService
+  url: https://urbanlogiq.com/terms-and-conditions
+- type: TrustCenter
+  url: security/urbanlogiq-trust-center.yml
+- type: Compliance
+  url: https://urbanlogiq.com/trust-center
+- type: Packages
+  url: packages/urbanlogiq-packages.yml
+- type: SDKs
+  url: packages/urbanlogiq-packages.yml
+- type: CLI
+  url: cli/urbanlogiq-cli.yml
+- type: WellKnown
+  url: well-known/urbanlogiq-well-known.yml
+- type: SecurityTxt
+  url: well-known/urbanlogiq-security.txt
+- type: LLMsTxt
+  url: llms/urbanlogiq-llms.txt
+- type: MCPServer
+  url: mcp/urbanlogiq-mcp.yml
+- type: Authentication
+  url: authentication/urbanlogiq-authentication.yml
+- type: Conformance
+  url: conformance/urbanlogiq-conformance.yml
+- type: Conventions
+  url: conventions/urbanlogiq-conventions.yml
+- type: Sandbox
+  url: sandbox/urbanlogiq-sandbox.yml
+- type: Lifecycle
+  url: lifecycle/urbanlogiq-lifecycle.yml

@@ -1,0 +1,26 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/urbanlogiq/ulcli
+name: ulcli
+description: >-
+  UrbanLogiq Command Line Interface — a first-party Python CLI distributed as
+  open source from GitHub (not published to PyPI). Built on the ulsdk signed
+  request stack, it uses the same ~/.ul/keys profiles, regions (us/ca), and
+  environments (prod/stage) as the SDK.
+install:
+- method: source
+  command: pip install git+https://github.com/urbanlogiq/ulcli.git
+global_flags:
+- flag: --region
+  description: Region to target (us, ca)
+- flag: --environment
+  description: Environment to target (prod, stage)
+- flag: --profile
+  description: Key profile from ~/.ul/keys to use if not the regular us/ca
+commands:
+- group: drive
+  description: Work with UrbanLogiq Drive file storage (list, upload, manage entries)
+- group: keys
+  description: Manage API keys (aligned with the /v1/api/uldirectory/v1/keys endpoints)
+- group: pipeline
+  description: Deploy pipelines to a region/environment (per the CLI's deploy help text)

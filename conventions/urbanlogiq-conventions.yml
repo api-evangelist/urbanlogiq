@@ -1,0 +1,48 @@
+generated: '2026-07-21'
+method: derived
+source: https://github.com/urbanlogiq/ulsdk
+authentication:
+  style: signed-requests
+  detail: >-
+    UL1-ED25519 canonical request signing (method, path, sorted query, signed
+    headers, SHA-256 body hash) with Access Key ID + Secret Key; X-UL-Signature
+    carries the signature. Bearer tokens are supported as an alternative
+    context. See authentication/urbanlogiq-authentication.yml.
+regions:
+  style: regional-environments
+  detail: >-
+    Separate regional deployments for data residency — US
+    (https://home.urbanlogiq.us) and Canada (https://home.urbanlogiq.ca), each
+    with a prod and a stage environment (https://stage.urbanlogiq.us,
+    https://stage.urbanlogiq.ca). The SDK binds region + environment into the
+    request context.
+versioning:
+  style: uri-path
+  detail: >-
+    Gateway paths are versioned in the URI (/v1/...); services carry their own
+    path versions (/v1/api/ulv2/datacatalog/..., /v1/api/uldirectory/v1/...).
+    See lifecycle/urbanlogiq-lifecycle.yml.
+content_negotiation:
+  detail: >-
+    Data catalog stream and query endpoints serve the same resource in
+    multiple formats — Apache Arrow, Parquet, CSV, XLSX, JSON, text, and HTML
+    (stream_get_* / query_* variants); writes accept Arrow, JSON, and
+    diffstream payloads.
+identifiers:
+  style: uuid
+  detail: Objects, users, and keys are addressed by UUIDs; API keys are bound to a user UUID.
+typed_payloads:
+  detail: >-
+    Request/response types are FlatBuffers-generated across C++, Go, Java,
+    Python, Rust, and TypeScript, alongside JSON dataclass serializers.
+idempotency:
+  supported: false
+  detail: No idempotency-key contract is documented in the SDK or public surface.
+pagination:
+  detail: No cross-cutting pagination convention is documented in the public SDK surface.
+error_envelope:
+  detail: No public error-envelope or problem-details documentation was found.
+cross_links:
+- authentication/urbanlogiq-authentication.yml
+- lifecycle/urbanlogiq-lifecycle.yml
+- sandbox/urbanlogiq-sandbox.yml

@@ -1,0 +1,3 @@
+Contact: mailto:security@urbanlogiq.com
+Preferred-Languages: en
+Expires: 2035-12-31T23:59:59Z

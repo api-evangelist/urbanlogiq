@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/urbanlogiq/ulsdk
+docs: https://github.com/urbanlogiq/ulsdk#authentication
+summary:
+  types: [signedRequest, bearer]
+  api_key_in: [signature]
+  oauth2_flows: []
+schemes:
+- name: UL1-ED25519
+  type: signedRequest
+  description: >-
+    All access to UrbanLogiq systems requires authentication, typically with
+    signed requests using API keys. An API key consists of an Access Key ID
+    and a Secret Key; the Secret Key signs a canonical request (method, path,
+    sorted query string, signed headers, SHA-256 body hash — an AWS
+    SigV4-style canonicalization) with an Ed25519 signature carried as
+    X-UL-Signature. Keys are bound to a user ID (UUID), a region (US or CA),
+    and an environment (prod or stage), and can be stored in profile form in
+    a local ~/.ul/keys file.
+  signature: UL1-ED25519
+  signature_header: X-UL-Signature
+  request_type: ul1_request
+  key_portal:
+  - region: us
+    url: https://home.urbanlogiq.us/admin/keys
+  - region: ca
+    url: https://home.urbanlogiq.ca/admin/keys
+  verification_call: GET /v1/bootstrap/ (api.gate.bootstrap returns current user, groups, client secrets)
+  sources: [https://github.com/urbanlogiq/ulsdk]
+- name: bearer
+  type: http
+  scheme: bearer
+  description: >-
+    The SDK RequestContext abstraction also supports bearer-token
+    authentication as an alternative to signed requests (used by the web
+    application session flow).
+  sources: [https://github.com/urbanlogiq/ulsdk]

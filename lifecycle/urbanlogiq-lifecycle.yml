@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: derived
+source: https://github.com/urbanlogiq/ulsdk
+versioning:
+  scheme: uri-path
+  current: v1
+  detail: >-
+    Gateway routes are URI-versioned (/v1/...); individual services carry
+    their own versions in the path (uldirectory/v1, ulv2 datacatalog/drive/
+    inbox/schematicevaluator). The multi-language SDK is versioned separately
+    (ulsdk 0.8.0).
+deprecation:
+  policy_url: null
+  sunset_header: false
+  detail: No public deprecation policy or RFC 8594 Sunset-header support was found.
+sla: null
+status_page: null
+status_page_note: >-
+  No public status page was found — status.urbanlogiq.com does not resolve
+  and no status link is published on urbanlogiq.com.
+deprecated_operations: []

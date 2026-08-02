@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/urbanlogiq/ulsdk
+test_vs_live:
+  style: environments
+  detail: >-
+    The platform separates live and test surfaces by environment rather than
+    key prefix — every API key context binds a region (us/ca) and an
+    environment (prod/stage), and the SDK routes to the matching host.
+environments:
+- name: prod
+  region: us
+  base_url: https://home.urbanlogiq.us
+- name: prod
+  region: ca
+  base_url: https://home.urbanlogiq.ca
+- name: stage
+  region: us
+  base_url: https://stage.urbanlogiq.us
+- name: stage
+  region: ca
+  base_url: https://stage.urbanlogiq.ca
+consoles:
+- name: API key portal (US)
+  url: https://home.urbanlogiq.us/admin/keys
+- name: API key portal (Canada)
+  url: https://home.urbanlogiq.ca/admin/keys
+verification:
+  detail: >-
+    The documented smoke test for a fresh key is calling the bootstrap API
+    (GET /v1/bootstrap/), which returns the current user, their groups, and
+    client secrets.
+tooling:
+- name: ulsdk test_context
+  detail: The Python SDK ships a TestContext (ulsdk/test_context.py) for exercising API code without live credentials.
+notes: No magic test values (test cards, fixture tokens) are published; access requires a customer account.
